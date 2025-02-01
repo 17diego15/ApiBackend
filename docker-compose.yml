@@ -1,0 +1,38 @@
+version: '3.4'
+
+networks:
+  backend:
+    driver: bridge
+
+volumes:
+  sqlserver-data:
+    driver: local
+
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2019-CU21-ubuntu-20.04
+    ports:
+      - "8002:1433"
+    networks:
+      - backend
+    volumes:
+      - sqlserver-data:/var/opt/mssql
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "<YourStrong@Passw0rd>"
+
+  api:
+    build:
+      context: .  
+      dockerfile: Dockerfile
+    ports:
+      - "8001:80"
+    networks:
+      - backend
+    depends_on:
+      - db
+    environment:
+      - DOCKER_CONTAINER=true
+      - ConnectionStrings__DefaultConnection=Server=db;Database=GameDB;User Id=sa;Password=${MSSQL_SA_PASSWORD};TrustServerCertificate=True;
+    volumes:
+      - ./API/logs:/app/logs

@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameAPI.API", "API\GameAPI.API.csproj", "{C11E2749-57FB-4840-ABE3-283D7B9B1A4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameAPI.Business", "Business\GameAPI.Business.csproj", "{08FF69F8-8BBC-4B3C-928A-C49F9B13A7D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameAPI.Data", "Data\GameAPI.Data.csproj", "{CA520FF5-2D57-4ADD-8B95-8AC665667581}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameAPI.Models", "Models\GameAPI.Models.csproj", "{BF5E718E-BE06-437F-AF67-030A39727CC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C11E2749-57FB-4840-ABE3-283D7B9B1A4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C11E2749-57FB-4840-ABE3-283D7B9B1A4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C11E2749-57FB-4840-ABE3-283D7B9B1A4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C11E2749-57FB-4840-ABE3-283D7B9B1A4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08FF69F8-8BBC-4B3C-928A-C49F9B13A7D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08FF69F8-8BBC-4B3C-928A-C49F9B13A7D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08FF69F8-8BBC-4B3C-928A-C49F9B13A7D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08FF69F8-8BBC-4B3C-928A-C49F9B13A7D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA520FF5-2D57-4ADD-8B95-8AC665667581}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA520FF5-2D57-4ADD-8B95-8AC665667581}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA520FF5-2D57-4ADD-8B95-8AC665667581}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA520FF5-2D57-4ADD-8B95-8AC665667581}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF5E718E-BE06-437F-AF67-030A39727CC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF5E718E-BE06-437F-AF67-030A39727CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF5E718E-BE06-437F-AF67-030A39727CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF5E718E-BE06-437F-AF67-030A39727CC0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
